@@ -1,0 +1,84 @@
+ <!-- first div -->
+        <div class="bg-blue-700 grid grid-cols-1">
+          <!-- top 1 div -->
+          <div class="bg-gray-100 grid grid-cols-2">
+            <div
+              class="flex items-center overflow-hidden relative sm:w-[500px] md:w-[400px]"
+            >
+              <img
+                src="https://cdn3d.iconscout.com/3d/premium/thumb/ps-5-3d-icon-download-in-png-blend-fbx-gltf-file-formats--playstation-logo-ps5-video-game-tech-and-gadget-pack-technology-icons-9049040.png?f=webp"
+                class="absolute h-full w-full object-contain md:object-cover -translate-y-1/2 top-1/2 right-[30%] sm:left-0"
+                alt="vision pro"
+              />
+            </div>
+            <div class="flex flex-col justify-center">
+              <p class="font- text-5xl text-black">Playstation 5</p>
+              <p class="text-gray-400">
+                Incredibly powerful CPUs, GPUs, and an SSD with integrated I/O
+                will redefine your PlayStation experience.
+              </p>
+            </div>
+          </div>
+          <!-- under 2 div -->
+          <div class="grid grid-cols-1 md:grid-cols-2">
+            <div class="bg-gray-200 grid grid-cols-3">
+              <div
+                class="flex items-center overflow-hidden relative col-span-1 sm:w-[500px] md:w-[400px]"
+              >
+                <img
+                  src="https://help.apple.com/assets/673D1566902AEA8557045FB2/673D1574A739A4528A02AF54/en_US/be407fad48c9ccafcd87007eb6645d61.png"
+                  class="absolute h-full w-full object-contain md:object-cover -translate-y-1/2 -left-[20%] sm:-left-[50%] md:-left-[75%] lg:-left-[60%] top-1/2"
+                  alt="apple  pro"
+                />
+              </div>
+              <div class="flex flex-col justify-center col-span-2">
+                <p class="font- text-5xl text-black">
+                  Apple <br />
+                  AirPos Max
+                </p>
+                <p class="text-gray-400">
+                  An immpresive way to experince entertainment
+                </p>
+              </div>
+            </div>
+            <div class="bg-gray-500 grid grid-cols-3">
+              <div
+                class="flex items-center overflow-hidden relative col-span-1 sm:w-[500px] md:w-[400px]"
+              >
+                <img
+                  src="https://png.pngtree.com/png-clipart/20230613/ourmid/pngtree-apple-vision-pro-2-png-image_7134825.png"
+                  class="absolute h-full w-full object-contain md:object-cover -translate-y-1/2 -left-[20%] sm:-left-[50%] md:-left-[75%] lg:-left-[60%] top-1/2"
+                  alt="vision pro"
+                />
+              </div>
+              <div class="flex flex-col justify-center col-span-2">
+                <p class="font- text-5xl text-white">
+                  Apple <br />
+                  Vision Pro
+                </p>
+                <p class="text-gray-400">
+                  An immpresive way to experince entertainment
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- secound div -->
+        <div class="bg-gray-100 grid grid-cols-2">
+          <div
+            class="flex items-center overflow-hidden relative sm:w-[500px] md:w-[400px]"
+          >
+            <img
+              src="https://cdn3d.iconscout.com/3d/premium/thumb/ps-5-3d-icon-download-in-png-blend-fbx-gltf-file-formats--playstation-logo-ps5-video-game-tech-and-gadget-pack-technology-icons-9049040.png?f=webp"
+              class="absolute h-full w-full object-contain md:object-cover -translate-y-1/2 top-1/2 right-[30%] sm:left-0"
+              alt="vision pro"
+            />
+          </div>
+          <div class="flex flex-col justify-center">
+            <p class="font- text-5xl text-black">Playstation 5</p>
+            <p class="text-gray-400">
+              Incredibly powerful CPUs, GPUs, and an SSD with integrated I/O
+              will redefine your PlayStation experience.
+            </p>
+          </div>
+        </div>
