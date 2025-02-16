@@ -141,7 +141,9 @@
           class="flex items-center gap-3 flex-col-reverse md:grid grid-cols-1 md:grid-cols-3 h-auto"
         >
           <!-- left prod -->
-          <div class="thumbnails gap-4 flex flex-row md:flex-col col-span-1">
+          <div
+            class="thumbnails gap-4 flex flex-row md:flex-col col-span-1 p-3 md:p-0"
+          >
             <!-- card -->
             <div id="1" class="cursor-pointer rounded-xl ring-active">
               <img
@@ -439,7 +441,7 @@
             <!-- 6 -->
             <div>
               <div class="flex mb-5 items-center justify-between">
-                <p>Additionallyl</p>
+                <p>Additionally</p>
                 <div class="flex flex-col space-y-1 text-left">
                   <p class="flex flex-row-reverse">Dynamic Island</p>
                   <p class="flex flex-row-reverse">Always-On display</p>
@@ -479,15 +481,437 @@
                 class="inline-block w-full rounded-sm border border-current px-8 py-3 text-sm font-medium text-black transition hover:scale-110 hover:shadow-xl focus:ring-3 focus:outline-hidden"
                 href="#"
               >
-                Add to wishlist
+                View More
                 <span><i class="fa-solid fa-chevron-down pl-5"></i></span>
               </a>
             </div>
           </div>
         </div>
       </section>
+      <!-- rating section -->
+      <section
+        class="max-w-[1200px] m-auto bg-white p-5 md:py-0 flex flex-col flex-wrap gap-3 items-center pb-10 my-5"
+      >
+        <div class="flex w-full text-xl">
+          <p>Reviews</p>
+        </div>
+        <!-- rate box 100-10% -->
+        <div class="w-full grid grid-cols-1 md:grid-cols-3 px-5 md:p-0">
+          <div class="flex py-5">
+            <div
+              class="flex flex-col gap-3 items-center justify-center py-5 px-10 md:py-0 bg-[#fafafa] rounded-lg h-full"
+            >
+              <p class="text-4xl font-bold">4.8</p>
+              <p class="text-gray-300">of 125 reviews</p>
+              <div class="flex items-center gap-1">
+                <i class="fa-solid fa-star text-yellow-300"></i>
+                <i class="fa-solid fa-star text-yellow-300"></i
+                ><i class="fa-solid fa-star text-yellow-300"></i
+                ><i class="fa-solid fa-star text-yellow-300"></i>
+                <i class="fa-regular fa-star text-yellow-300"></i>
+              </div>
+            </div>
+          </div>
+          <div class="grid-cols-1 gap-3 col-span-2">
+            <!-- 100% -->
+            <div class="grid grid-cols-1 md:grid-cols-3">
+              <div class="flex items-center">
+                <p>Excellent</p>
+              </div>
+              <div class="col-span-2 flex">
+                <div
+                  class="w-[90%] bg-gray-200 mt-5 rounded-full h-2.5 mb-4 dark:bg-gray-700"
+                >
+                  <div
+                    class="bg-yellow-400 h-2.5 rounded-full"
+                    style="width: 97%"
+                  ></div>
+                </div>
+                <p class="mt-1 flex items-center pl-4">100</p>
+              </div>
+            </div>
+            <!-- 60% -->
+            <div class="grid grid-cols-1 md:grid-cols-3">
+              <div class="flex items-center">
+                <p>Good</p>
+              </div>
+              <div class="col-span-2 flex">
+                <div
+                  class="w-[90%] bg-gray-200 mt-5 rounded-full h-2.5 mb-4 dark:bg-gray-700"
+                >
+                  <div
+                    class="bg-yellow-400 h-2.5 rounded-full"
+                    style="width: 60%"
+                  ></div>
+                </div>
+                <p class="mt-1 flex items-center pl-4">11</p>
+              </div>
+            </div>
+            <!-- 40% -->
+            <div class="grid grid-cols-1 md:grid-cols-3">
+              <div class="flex items-center">
+                <p>Average</p>
+              </div>
+              <div class="col-span-2 flex">
+                <div
+                  class="w-[90%] bg-gray-200 mt-5 rounded-full h-2.5 mb-4 dark:bg-gray-700"
+                >
+                  <div
+                    class="bg-yellow-400 h-2.5 rounded-full"
+                    style="width: 40%"
+                  ></div>
+                </div>
+                <p class="mt-1 flex items-center pl-4">3</p>
+              </div>
+            </div>
+            <!-- 30% -->
+            <div class="grid grid-cols-1 md:grid-cols-3">
+              <div class="flex items-center">
+                <p>Below Average</p>
+              </div>
+              <div class="col-span-2 flex">
+                <div
+                  class="w-[90%] bg-gray-200 mt-5 rounded-full h-2.5 mb-4 dark:bg-gray-700"
+                >
+                  <div
+                    class="bg-yellow-400 h-2.5 rounded-full"
+                    style="width: 30%"
+                  ></div>
+                </div>
+                <p class="mt-1 flex items-center pl-4">8</p>
+              </div>
+            </div>
+            <!-- 10% -->
+            <div class="grid grid-cols-1 md:grid-cols-3">
+              <div class="flex items-center">
+                <p>Poor</p>
+              </div>
+              <div class="col-span-2 flex">
+                <div
+                  class="w-[90%] bg-gray-200 mt-5 rounded-full h-2.5 mb-4 dark:bg-gray-700"
+                >
+                  <div
+                    class="bg-yellow-400 h-2.5 rounded-full"
+                    style="width: 10%"
+                  ></div>
+                </div>
+                <p class="mt-1 flex items-center pl-4">1</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- comment -->
+        <div class="w-full">
+          <form>
+            <label for="chat" class="sr-only">Your message</label>
+            <div
+              class="flex items-center px-3 py-2 rounded-lg bg-gray-50 dark:bg-gray-700"
+            >
+              <button
+                type="button"
+                class="inline-flex justify-center p-2 text-gray-500 rounded-lg cursor-pointer hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600"
+              >
+                <svg
+                  class="w-5 h-5"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 20 18"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M13 5.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0ZM7.565 7.423 4.5 14h11.518l-2.516-3.71L11 13 7.565 7.423Z"
+                  />
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M18 1H2a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1Z"
+                  />
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M13 5.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0ZM7.565 7.423 4.5 14h11.518l-2.516-3.71L11 13 7.565 7.423Z"
+                  />
+                </svg>
+                <span class="sr-only">Upload image</span>
+              </button>
+              <button
+                type="button"
+                class="p-2 text-gray-500 rounded-lg cursor-pointer hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600"
+              >
+                <svg
+                  class="w-5 h-5"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M13.408 7.5h.01m-6.876 0h.01M19 10a9 9 0 1 1-18 0 9 9 0 0 1 18 0ZM4.6 11a5.5 5.5 0 0 0 10.81 0H4.6Z"
+                  />
+                </svg>
+                <span class="sr-only">Add emoji</span>
+              </button>
+              <textarea
+                id="chat"
+                rows="1"
+                class="block mx-4 p-2.5 w-full text-sm text-gray-900 bg-white rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-800 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                placeholder="Your message..."
+              ></textarea>
+              <button
+                type="submit"
+                class="inline-flex justify-center p-2 text-blue-600 rounded-full cursor-pointer hover:bg-blue-100 dark:text-blue-500 dark:hover:bg-gray-600"
+              >
+                <svg
+                  class="w-5 h-5 rotate-90 rtl:-rotate-90"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  viewBox="0 0 18 20"
+                >
+                  <path
+                    d="m17.914 18.594-8-18a1 1 0 0 0-1.828 0l-8 18a1 1 0 0 0 1.157 1.376L8 18.281V9a1 1 0 0 1 2 0v9.281l6.758 1.689a1 1 0 0 0 1.156-1.376Z"
+                  />
+                </svg>
+                <span class="sr-only">Send message</span>
+              </button>
+            </div>
+          </form>
+        </div>
+        <!-- person1 -->
+        <div
+          class="relative w-full bg-[#fafafa] p-5 rounded-lg break-inside-avoid-column"
+        >
+          <div class="mt-5 flex items-center justify-between gap-4">
+            <!-- profile -->
+            <div class="flex items-center gap-3">
+              <img
+                src="https://media.istockphoto.com/id/1437816897/photo/business-woman-manager-or-human-resources-portrait-for-career-success-company-we-are-hiring.jpg?s=612x612&w=0&k=20&c=tyLvtzutRh22j9GqSGI33Z4HpIwv9vL_MZw_xOE19NQ="
+                class="w-10 h-10 object-cover object-center rounded-full"
+                alt="Aaron Francis"
+              />
+              <div class="text-xs">
+                <!-- name -->
+                <p class="not-italic font-bold">Aaron Francis</p>
+                <!-- rating stars -->
+                <div class="flex items-center gap-1">
+                  <i class="fa-solid fa-star text-yellow-300"></i>
+                  <i class="fa-solid fa-star text-yellow-300"></i
+                  ><i class="fa-solid fa-star text-yellow-300"></i
+                  ><i class="fa-solid fa-star text-yellow-300"></i>
+                  <i class="fa-regular fa-star text-yellow-300"></i>
+                </div>
+              </div>
+            </div>
+            <!-- date -->
+            <div>
+              <p class="text-xs text-gray-300">12.05.2023</p>
+            </div>
+          </div>
+          <p class="text-sm">
+            I was a bit nervous to be buying a secondhand phone from Amazon, but
+            I couldn’t be happier with my purchase!! I have a pre-paid data plan
+            so I was worried that this phone wouldn’t connect with my data plan,
+            since the new phones don’t have the physical Sim tray anymore, but
+            couldn’t have been easier! I bought an Unlocked black iPhone 14 Pro
+            Max in excellent condition and everything is PERFECT. It was super
+            easy to set up and the phone works and looks great. It truly was in
+            excellent condition. Highly recommend!!!🖤
+          </p>
+        </div>
+        <!-- person2 -->
+        <div
+          class="relative w-full bg-[#fafafa] p-5 rounded-lg break-inside-avoid-column"
+        >
+          <div class="mt-5 flex items-center justify-between gap-4">
+            <!-- profile -->
+            <div class="flex items-center gap-3">
+              <img
+                src="https://media.istockphoto.com/id/1437816897/photo/business-woman-manager-or-human-resources-portrait-for-career-success-company-we-are-hiring.jpg?s=612x612&w=0&k=20&c=tyLvtzutRh22j9GqSGI33Z4HpIwv9vL_MZw_xOE19NQ="
+                class="w-10 h-10 object-cover object-center rounded-full"
+                alt="Aaron Francis"
+              />
+              <div class="text-xs">
+                <!-- name -->
+                <p class="not-italic font-bold">Aaron Francis</p>
+                <!-- rating stars -->
+                <div class="flex items-center gap-1">
+                  <i class="fa-solid fa-star text-yellow-300"></i>
+                  <i class="fa-solid fa-star text-yellow-300"></i
+                  ><i class="fa-solid fa-star text-yellow-300"></i
+                  ><i class="fa-solid fa-star text-yellow-300"></i>
+                  <i class="fa-regular fa-star text-yellow-300"></i>
+                </div>
+              </div>
+            </div>
+            <!-- date -->
+            <div>
+              <p class="text-xs text-gray-300">12.05.2023</p>
+            </div>
+          </div>
+          <p class="text-sm">
+            I was a bit nervous to be buying a secondhand phone from Amazon, but
+            I couldn’t be happier with my purchase!! I have a pre-paid data plan
+            so I was worried that this phone wouldn’t connect with my data plan,
+            since the new phones don’t have the physical Sim tray anymore, but
+            couldn’t have been easier! I bought an Unlocked black iPhone 14 Pro
+            Max in excellent condition and everything is PERFECT. It was super
+            easy to set up and the phone works and looks great. It truly was in
+            excellent condition. Highly recommend!!!🖤
+          </p>
+        </div>
+        <!-- person3 -->
+        <div
+          class="relative w-full bg-[#fafafa] p-5 rounded-lg break-inside-avoid-column"
+        >
+          <div class="mt-5 flex items-center justify-between gap-4">
+            <!-- profile -->
+            <div class="flex items-center gap-3">
+              <img
+                src="https://media.istockphoto.com/id/1437816897/photo/business-woman-manager-or-human-resources-portrait-for-career-success-company-we-are-hiring.jpg?s=612x612&w=0&k=20&c=tyLvtzutRh22j9GqSGI33Z4HpIwv9vL_MZw_xOE19NQ="
+                class="w-10 h-10 object-cover object-center rounded-full"
+                alt="Aaron Francis"
+              />
+              <div class="text-xs">
+                <!-- name -->
+                <p class="not-italic font-bold">Aaron Francis</p>
+                <!-- rating stars -->
+                <div class="flex items-center gap-1">
+                  <i class="fa-solid fa-star text-yellow-300"></i>
+                  <i class="fa-solid fa-star text-yellow-300"></i
+                  ><i class="fa-solid fa-star text-yellow-300"></i
+                  ><i class="fa-solid fa-star text-yellow-300"></i>
+                  <i class="fa-regular fa-star text-yellow-300"></i>
+                </div>
+              </div>
+            </div>
+            <!-- date -->
+            <div>
+              <p class="text-xs text-gray-300">12.05.2023</p>
+            </div>
+          </div>
+          <!-- comment -->
+          <p class="text-sm">
+            I was a bit nervous to be buying a secondhand phone from Amazon, but
+            I couldn’t be happier with my purchase!! I have a pre-paid data plan
+            so I was worried that this phone wouldn’t connect with my data plan,
+            since the new phones don’t have the physical Sim tray anymore, but
+            couldn’t have been easier! I bought an Unlocked black iPhone 14 Pro
+            Max in excellent condition and everything is PERFECT. It was super
+            easy to set up and the phone works and looks great. It truly was in
+            excellent condition. Highly recommend!!!🖤
+          </p>
+          <!-- picture of comment -->
+          <div class="flex gap-2 mt-4">
+            <div>
+              <img
+                src="https://images.indianexpress.com/2024/09/apple-iphone-16-pro-max-review3.jpg"
+                class="w-32 h-32 object-cover object-center rounded-lg"
+                alt="Aaron Francis"
+              />
+            </div>
+            <div>
+              <img
+                src="https://www.androidheadlines.com/wp-content/uploads/2024/09/Apple-iPhone-16-Pro-AM-AH-03.webp"
+                class="w-32 h-32 object-cover object-center rounded-lg"
+                alt="Aaron Francis"
+              />
+            </div>
+          </div>
+        </div>
+        <!-- btn view more -->
+        <div class="flex items-center justify-center">
+          <!-- Border -->
+          <div class="flex items-center">
+            <a
+              class="inline-block w-full rounded-sm border border-current px-8 py-3 text-sm font-medium text-black transition hover:scale-110 hover:shadow-xl focus:ring-3 focus:outline-hidden"
+              href="#"
+            >
+              View More
+              <span><i class="fa-solid fa-chevron-down pl-5"></i></span>
+            </a>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer></footer>
+    <footer class="p-5 bg-black">
+      <section class="max-w-[1200px] m-auto grid grid-cols-1">
+        <div class="grid grid-cols-1 md:grid-cols-3">
+          <!-- 1 -->
+          <div class="flex flex-col gap-5 p-4">
+            <span class="font-semibold text-white">Cyber</span>
+            <p class="text-gray-400">
+              We are a residential interior design firm located in Portland. Our
+              boutique-studio offers more than
+            </p>
+          </div>
+          <!-- 2 -->
+          <div class="flex flex-col gap-5 p-4">
+            <span class="font-semibold text-white">Services</span>
+            <ul class="text-gray-400">
+              <li class="mb-5">
+                <a href=""> Bonus program </a>
+              </li>
+              <li class="mb-5">
+                <a href=""> Gift cards </a>
+              </li>
+              <li class="mb-5">
+                <a href=""> Credit and payment </a>
+              </li>
+              <li class="mb-5">
+                <a href=""> Service contracts </a>
+              </li>
+              <li class="mb-5">
+                <a href=""> Non-cash account </a>
+              </li>
+              <li class="mb-5">
+                <a href=""> Payment </a>
+              </li>
+            </ul>
+          </div>
+          <!-- 3 -->
+          <div class="flex flex-col gap-5 p-4">
+            <span class="font-semibold text-white">Services</span>
+            <ul class="text-gray-400">
+              <li class="mb-5">
+                <a href=""> Bonus program </a>
+              </li>
+              <li class="mb-5">
+                <a href=""> Gift cards </a>
+              </li>
+              <li class="mb-5">
+                <a href=""> Credit and payment </a>
+              </li>
+              <li class="mb-5">
+                <a href=""> Service contracts </a>
+              </li>
+              <li class="mb-5">
+                <a href=""> Non-cash account </a>
+              </li>
+              <li class="mb-5">
+                <a href=""> Payment </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="text-white pl-4 md:pl-0 h-[150px]">
+          <div class="flex items-center gap-5 h-full">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-github"></i>
+            <i class="fa-brands fa-tiktok"></i>
+            <i class="fa-brands fa-twitter"></i>
+          </div>
+        </div>
+      </section>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
   </body>
 </html>
