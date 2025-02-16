@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./style/output.css" />
+    <title>product</title>
+  </head>
+  <body>
+    <header class="sticky top-0 z-10">
+      <nav class="bg-white border-gray-200 dark:bg-gray-900">
+        <div
+          class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+        >
+          <a
+            href="https://flowbite.com/"
+            class="flex items-center space-x-3 rtl:space-x-reverse"
+          >
+            <img
+              src="https://flowbite.com/docs/images/logo.svg"
+              class="h-8"
+              alt="Flowbite Logo"
+            />
+            <span
+              class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
+              >Cyber</span
+            >
+          </a>
+          <button
+            data-collapse-toggle="navbar-default"
+            type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-default"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="w-5 h-5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 17 14"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15"
+              />
+            </svg>
+          </button>
+          <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+            <ul
+              class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+            >
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
+                  aria-current="page"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >Pricing</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="p-5 max-w-[1200px] m-auto">
+      <!-- navigate to sec -->
+      <section class="flex gap-3 items-center px-5 pb-10">
+        <div class="flex gap-3 items-center text-gray-300">
+          <p>Home</p>
+          <i class="fa-solid fa-chevron-right"></i>
+        </div>
+        <div class="flex gap-3 items-center text-gray-300">
+          <p>catelog</p>
+          <i class="fa-solid fa-chevron-right"></i>
+        </div>
+        <div class="flex gap-3 items-center">
+          <p>SmartPhones</p>
+        </div>
+      </section>
+      <!-- Shop -->
+      <section class="grid grid-cols-1 md:grid-cols-4">
+        <!-- dropdownlisting section -->
+        <div class="col-span-1 h-full flex flex-col gap-4 px-5">
+          <!-- drop up -->
+          <div
+            class="border-b-1 border-gray-400 flex justify-between items-center p-2"
+          >
+            <p>Brand</p>
+            <i class="fa-solid fa-angle-up"></i>
+          </div>
+          <!-- search -->
+          <div>
+            <form class="max-w-md mx-auto">
+              <label
+                for="default-search"
+                class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white"
+                >Search</label
+              >
+              <div class="relative">
+                <div
+                  class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none"
+                >
+                  <svg
+                    class="w-4 h-4 text-gray-500 dark:text-gray-400"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
+                    />
+                  </svg>
+                </div>
+                <input
+                  type="search"
+                  id="default-search"
+                  class="block w-full p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                  placeholder="Search "
+                  required
+                />
+              </div>
+            </form>
+          </div>
+          <div class="checkbox flex flex-col">
+            <!-- effect -->
+            <div class="inline-flex items-center">
+              <label
+                class="relative flex cursor-pointer items-center rounded-full p-3"
+                for="ripple-on"
+                data-ripple-dark="true"
+              >
+                <input
+                  id="ripple-on"
+                  type="checkbox"
+                  class="peer relative h-5 w-5 cursor-pointer appearance-none rounded border border-slate-300 shadow hover:shadow-md transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-slate-400 before:opacity-0 before:transition-opacity checked:border-slate-800 checked:bg-slate-800 checked:before:bg-slate-400 hover:before:opacity-10"
+                />
+                <span
+                  class="pointer-events-none absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 text-white opacity-0 transition-opacity peer-checked:opacity-100"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-3.5 w-3.5"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    stroke="currentColor"
+                    stroke-width="1"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                </span>
+              </label>
+              <label
+                class="cursor-pointer font-bold text-slate-600 text-sm"
+                for="ripple-on"
+              >
+                Apple
+              </label>
+              <span
+                class="ml-2 cursor-pointer text-slate-600 text-sm"
+                for="ripple-on"
+              >
+                110
+              </span>
+            </div>
+            <!-- effect -->
+            <div class="inline-flex items-center">
+              <label
+                class="relative flex cursor-pointer items-center rounded-full p-3"
+                for="ripple-on"
+                data-ripple-dark="true"
+              >
+                <input
+                  id="ripple-on"
+                  type="checkbox"
+                  class="peer relative h-5 w-5 cursor-pointer appearance-none rounded border border-slate-300 shadow hover:shadow-md transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-slate-400 before:opacity-0 before:transition-opacity checked:border-slate-800 checked:bg-slate-800 checked:before:bg-slate-400 hover:before:opacity-10"
+                />
+                <span
+                  class="pointer-events-none absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 text-white opacity-0 transition-opacity peer-checked:opacity-100"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-3.5 w-3.5"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    stroke="currentColor"
+                    stroke-width="1"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                </span>
+              </label>
+              <label
+                class="cursor-pointer font-bold text-slate-600 text-sm"
+                for="ripple-on"
+              >
+                Xiaomi
+              </label>
+              <span
+                class="ml-2 cursor-pointer text-slate-600 text-sm"
+                for="ripple-on"
+              >
+                110
+              </span>
+            </div>
+            <!-- effect -->
+            <div class="inline-flex items-center">
+              <label
+                class="relative flex cursor-pointer items-center rounded-full p-3"
+                for="ripple-on"
+                data-ripple-dark="true"
+              >
+                <input
+                  id="ripple-on"
+                  type="checkbox"
+                  class="peer relative h-5 w-5 cursor-pointer appearance-none rounded border border-slate-300 shadow hover:shadow-md transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-slate-400 before:opacity-0 before:transition-opacity checked:border-slate-800 checked:bg-slate-800 checked:before:bg-slate-400 hover:before:opacity-10"
+                />
+                <span
+                  class="pointer-events-none absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 text-white opacity-0 transition-opacity peer-checked:opacity-100"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-3.5 w-3.5"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    stroke="currentColor"
+                    stroke-width="1"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                </span>
+              </label>
+              <label
+                class="cursor-pointer font-bold text-slate-600 text-sm"
+                for="ripple-on"
+              >
+                Poco
+              </label>
+              <span
+                class="ml-2 cursor-pointer text-slate-600 text-sm"
+                for="ripple-on"
+              >
+                110
+              </span>
+            </div>
+            <!-- effect -->
+            <div class="inline-flex items-center">
+              <label
+                class="relative flex cursor-pointer items-center rounded-full p-3"
+                for="ripple-on"
+                data-ripple-dark="true"
+              >
+                <input
+                  id="ripple-on"
+                  type="checkbox"
+                  class="peer relative h-5 w-5 cursor-pointer appearance-none rounded border border-slate-300 shadow hover:shadow-md transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-slate-400 before:opacity-0 before:transition-opacity checked:border-slate-800 checked:bg-slate-800 checked:before:bg-slate-400 hover:before:opacity-10"
+                />
+                <span
+                  class="pointer-events-none absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 text-white opacity-0 transition-opacity peer-checked:opacity-100"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-3.5 w-3.5"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    stroke="currentColor"
+                    stroke-width="1"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                </span>
+              </label>
+              <label
+                class="cursor-pointer font-bold text-slate-600 text-sm"
+                for="ripple-on"
+              >
+                Oppo
+              </label>
+              <span
+                class="ml-2 cursor-pointer text-slate-600 text-sm"
+                for="ripple-on"
+              >
+                110
+              </span>
+            </div>
+            <!-- effect -->
+            <div class="inline-flex items-center">
+              <label
+                class="relative flex cursor-pointer items-center rounded-full p-3"
+                for="ripple-on"
+                data-ripple-dark="true"
+              >
+                <input
+                  id="ripple-on"
+                  type="checkbox"
+                  class="peer relative h-5 w-5 cursor-pointer appearance-none rounded border border-slate-300 shadow hover:shadow-md transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-slate-400 before:opacity-0 before:transition-opacity checked:border-slate-800 checked:bg-slate-800 checked:before:bg-slate-400 hover:before:opacity-10"
+                />
+                <span
+                  class="pointer-events-none absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 text-white opacity-0 transition-opacity peer-checked:opacity-100"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-3.5 w-3.5"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    stroke="currentColor"
+                    stroke-width="1"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                </span>
+              </label>
+              <label
+                class="cursor-pointer font-bold text-slate-600 text-sm"
+                for="ripple-on"
+              >
+                Honor
+              </label>
+              <span
+                class="ml-2 cursor-pointer text-slate-600 text-sm"
+                for="ripple-on"
+              >
+                110
+              </span>
+            </div>
+            <!-- effect -->
+            <div class="inline-flex items-center">
+              <label
+                class="relative flex cursor-pointer items-center rounded-full p-3"
+                for="ripple-on"
+                data-ripple-dark="true"
+              >
+                <input
+                  id="ripple-on"
+                  type="checkbox"
+                  class="peer relative h-5 w-5 cursor-pointer appearance-none rounded border border-slate-300 shadow hover:shadow-md transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-slate-400 before:opacity-0 before:transition-opacity checked:border-slate-800 checked:bg-slate-800 checked:before:bg-slate-400 hover:before:opacity-10"
+                />
+                <span
+                  class="pointer-events-none absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 text-white opacity-0 transition-opacity peer-checked:opacity-100"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-3.5 w-3.5"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    stroke="currentColor"
+                    stroke-width="1"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                </span>
+              </label>
+              <label
+                class="cursor-pointer font-bold text-slate-600 text-sm"
+                for="ripple-on"
+              >
+                Realme
+              </label>
+              <span
+                class="ml-2 cursor-pointer text-slate-600 text-sm"
+                for="ripple-on"
+              >
+                110
+              </span>
+            </div>
+            <!-- effect -->
+            <div class="inline-flex items-center">
+              <label
+                class="relative flex cursor-pointer items-center rounded-full p-3"
+                for="ripple-on"
+                data-ripple-dark="true"
+              >
+                <input
+                  id="ripple-on"
+                  type="checkbox"
+                  class="peer relative h-5 w-5 cursor-pointer appearance-none rounded border border-slate-300 shadow hover:shadow-md transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-slate-400 before:opacity-0 before:transition-opacity checked:border-slate-800 checked:bg-slate-800 checked:before:bg-slate-400 hover:before:opacity-10"
+                />
+                <span
+                  class="pointer-events-none absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 text-white opacity-0 transition-opacity peer-checked:opacity-100"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-3.5 w-3.5"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    stroke="currentColor"
+                    stroke-width="1"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                </span>
+              </label>
+              <label
+                class="cursor-pointer font-bold text-slate-600 text-sm"
+                for="ripple-on"
+              >
+                Oppo
+              </label>
+              <span
+                class="ml-2 cursor-pointer text-slate-600 text-sm"
+                for="ripple-on"
+              >
+                110
+              </span>
+            </div>
+            <!-- effect -->
+            <div class="inline-flex items-center">
+              <label
+                class="relative flex cursor-pointer items-center rounded-full p-3"
+                for="ripple-on"
+                data-ripple-dark="true"
+              >
+                <input
+                  id="ripple-on"
+                  type="checkbox"
+                  class="peer relative h-5 w-5 cursor-pointer appearance-none rounded border border-slate-300 shadow hover:shadow-md transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-slate-400 before:opacity-0 before:transition-opacity checked:border-slate-800 checked:bg-slate-800 checked:before:bg-slate-400 hover:before:opacity-10"
+                />
+                <span
+                  class="pointer-events-none absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 text-white opacity-0 transition-opacity peer-checked:opacity-100"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-3.5 w-3.5"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    stroke="currentColor"
+                    stroke-width="1"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                </span>
+              </label>
+              <label
+                class="cursor-pointer font-bold text-slate-600 text-sm"
+                for="ripple-on"
+              >
+                Honor
+              </label>
+              <span
+                class="ml-2 cursor-pointer text-slate-600 text-sm"
+                for="ripple-on"
+              >
+                110
+              </span>
+            </div>
+          </div>
+          <!-- drop down -->
+          <div
+            class="border-b-1 border-gray-400 flex justify-between items-center p-2"
+          >
+            <p>Battery capacity</p>
+            <i class="fa-solid fa-angle-down"></i>
+          </div>
+          <!-- drop down -->
+          <div
+            class="border-b-1 border-gray-400 flex justify-between items-center p-2"
+          >
+            <p>Battery capacity</p>
+            <i class="fa-solid fa-angle-down"></i>
+          </div>
+          <!-- drop down -->
+          <div
+            class="border-b-1 border-gray-400 flex justify-between items-center p-2"
+          >
+            <p>Battery capacity</p>
+            <i class="fa-solid fa-angle-down"></i>
+          </div>
+          <!-- drop down -->
+          <div
+            class="border-b-1 border-gray-400 flex justify-between items-center p-2"
+          >
+            <p>Battery capacity</p>
+            <i class="fa-solid fa-angle-down"></i>
+          </div>
+          <!-- drop down -->
+          <div
+            class="border-b-1 border-gray-400 flex justify-between items-center p-2"
+          >
+            <p>Battery capacity</p>
+            <i class="fa-solid fa-angle-down"></i>
+          </div>
+
+          <!-- card  -->
+        </div>
+        <!-- card sec -->
+        <div class="col-span-1 md:col-span-3">
+          <!-- filter and search product -->
+          <div
+            class="p-2 flex flex-col md:flex-row justify-between items-center gap-3"
+          >
+            <div>
+              <p>search product :<span class="text-xl">85</span></p>
+            </div>
+
+            <button
+              id="dropdownDefaultButton"
+              data-dropdown-toggle="dropdown"
+              class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              type="button"
+            >
+              Dropdown button
+              <svg
+                class="w-2.5 h-2.5 ms-3"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 10 6"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="m1 1 4 4 4-4"
+                />
+              </svg>
+            </button>
+
+            <!-- Dropdown menu -->
+            <div
+              id="dropdown"
+              class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700"
+            >
+              <ul
+                class="py-2 text-sm text-gray-700 dark:text-gray-200"
+                aria-labelledby="dropdownDefaultButton"
+              >
+                <li>
+                  <a
+                    href="#"
+                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                    >Dashboard</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                    >Settings</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                    >Earnings</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                    >Sign out</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- card grid -->
+          <div class="grid grid-cols-2 md:grid-cols-3 gap-5 p-2">
+            <!-- card -->
+            <div
+              class="bg-gray-100 flex flex-col gap-3 justify-center rounded-lg p-3 relative"
+            >
+              <!-- image -->
+              <div class="h-[150px] md:h-[250px]">
+                <img
+                  src="https://raw.githubusercontent.com/hdpngworld/HPW/main/uploads/65038654434d0-iPhone%2015%20Pro%20Natural%20titanium%20png.png"
+                  class="w-full h-full object-contain block"
+                  alt=""
+                />
+              </div>
+              <!-- des -->
+              <div>
+                <p>Apple iPhone 14 Pro 512GB Gold (MQ233)</p>
+              </div>
+              <!-- btn -->
+              <button
+                type="button"
+                class="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700"
+              >
+                Buy now
+              </button>
+              <!-- heart -->
+              <i class="fa-regular fa-heart absolute text-xl top-4 right-4"></i>
+            </div>
+            <!-- card -->
+            <div
+              class="bg-gray-100 flex flex-col gap-3 justify-center rounded-lg p-3 relative"
+            >
+              <!-- image -->
+              <div class="h-[150px] md:h-[250px]">
+                <img
+                  src="https://i.ebayimg.com/images/g/FJQAAOSw9jpkmA1N/s-l1200.jpg"
+                  class="w-full h-full object-contain block"
+                  alt=""
+                />
+              </div>
+              <!-- des -->
+              <div>
+                <p>Apple iPhone 14 Pro 512GB Gold (MQ233)</p>
+              </div>
+              <!-- btn -->
+              <button
+                type="button"
+                class="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700"
+              >
+                Buy now
+              </button>
+              <!-- heart -->
+              <i class="fa-regular fa-heart absolute text-xl top-4 right-4"></i>
+            </div>
+            <!-- card -->
+            <div
+              class="bg-gray-100 flex flex-col gap-3 justify-center rounded-lg p-3 relative"
+            >
+              <!-- image -->
+              <div class="h-[150px] md:h-[250px]">
+                <img
+                  src="https://refurbished.grademobile.co.uk/media/498/catalog/graphitei12pro-2.png?size=600"
+                  class="w-full h-full object-contain block"
+                  alt=""
+                />
+              </div>
+              <!-- des -->
+              <div>
+                <p>Apple iPhone 14 Pro 512GB Gold (MQ233)</p>
+              </div>
+
+              <!-- btn -->
+              <button
+                type="button"
+                class="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700"
+              >
+                Buy now
+              </button>
+              <!-- heart -->
+              <i class="fa-regular fa-heart absolute text-xl top-4 right-4"></i>
+            </div>
+            <!-- card -->
+            <div
+              class="bg-gray-100 flex flex-col gap-3 justify-center rounded-lg p-3 relative"
+            >
+              <!-- image -->
+              <div class="h-[150px] md:h-[250px]">
+                <img
+                  src="https://raw.githubusercontent.com/hdpngworld/HPW/main/uploads/65038654434d0-iPhone%2015%20Pro%20Natural%20titanium%20png.png"
+                  class="w-full h-full object-contain block"
+                  alt=""
+                />
+              </div>
+              <!-- des -->
+              <div>
+                <p>Apple iPhone 14 Pro 512GB Gold (MQ233)</p>
+              </div>
+              <!-- btn -->
+              <button
+                type="button"
+                class="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700"
+              >
+                Dark
+              </button>
+              <!-- heart -->
+              <i class="fa-regular fa-heart absolute text-xl top-4 right-4"></i>
+            </div>
+            <!-- card -->
+            <div
+              class="bg-gray-100 flex flex-col gap-3 justify-center rounded-lg p-3 relative"
+            >
+              <!-- image -->
+              <div class="h-[150px] md:h-[250px]">
+                <img
+                  src="https://storage.googleapis.com/alpine-inkwell-325917.appspot.com/devices/iphone-14-header.png"
+                  class="w-full h-full object-contain block"
+                  alt=""
+                />
+              </div>
+              <!-- des -->
+              <div>
+                <p>Apple iPhone 14 Pro 512GB Gold (MQ233)</p>
+              </div>
+              <!-- btn -->
+              <button
+                type="button"
+                class="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700"
+              >
+                Buy Now
+              </button>
+              <!-- heart -->
+              <i class="fa-regular fa-heart absolute text-xl top-4 right-4"></i>
+            </div>
+            <!-- card -->
+            <div
+              class="bg-gray-100 flex flex-col gap-3 justify-center rounded-lg p-3 relative"
+            >
+              <!-- image -->
+              <div class="h-[150px] md:h-[250px]">
+                <img
+                  src="https://images.anandtech.com/doci/16167/GEO-iPhone12ProMax-iPhone12Pro-pacific-blue-2up.png"
+                  class="w-full h-full object-contain block"
+                  alt=""
+                />
+              </div>
+              <!-- des -->
+              <div>
+                <p>Apple iPhone 14 Pro 512GB Gold (MQ233)</p>
+              </div>
+              <!-- btn -->
+              <button
+                type="button"
+                class="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700"
+              >
+                Buy Now
+              </button>
+              <!-- heart -->
+              <i class="fa-regular fa-heart absolute text-xl top-4 right-4"></i>
+            </div>
+            <!-- card -->
+            <div
+              class="bg-gray-100 flex flex-col gap-3 justify-center rounded-lg p-3 relative"
+            >
+              <!-- image -->
+              <div class="h-[150px] md:h-[250px]">
+                <img
+                  src="https://i.ebayimg.com/images/g/FJQAAOSw9jpkmA1N/s-l1200.jpg"
+                  class="w-full h-full object-contain block"
+                  alt=""
+                />
+              </div>
+              <!-- des -->
+              <div>
+                <p>Apple iPhone 14 Pro 512GB Gold (MQ233)</p>
+              </div>
+              <!-- btn -->
+              <button
+                type="button"
+                class="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700"
+              >
+                Buy Now
+              </button>
+              <!-- heart -->
+              <i class="fa-regular fa-heart absolute text-xl top-4 right-4"></i>
+            </div>
+            <!-- card -->
+            <div
+              class="bg-gray-100 flex flex-col gap-3 justify-center rounded-lg p-3 relative"
+            >
+              <!-- image -->
+              <div class="h-[150px] md:h-[250px]">
+                <img
+                  src="https://refurbished.grademobile.co.uk/media/498/catalog/graphitei12pro-2.png?size=600"
+                  class="w-full h-full object-contain block"
+                  alt=""
+                />
+              </div>
+              <!-- des -->
+              <div>
+                <p>Apple iPhone 14 Pro 512GB Gold (MQ233)</p>
+              </div>
+              <!-- btn -->
+              <button
+                type="button"
+                class="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700"
+              >
+                Buy Now
+              </button>
+              <!-- heart -->
+              <i class="fa-regular fa-heart absolute text-xl top-4 right-4"></i>
+            </div>
+            <!-- card -->
+            <div
+              class="bg-gray-100 flex flex-col gap-3 justify-center rounded-lg p-3 relative"
+            >
+              <!-- image -->
+              <div class="h-[150px] md:h-[250px]">
+                <img
+                  src="https://refurbished.grademobile.co.uk/media/498/catalog/graphitei12pro-2.png?size=600"
+                  class="w-full h-full object-contain block"
+                  alt=""
+                />
+              </div>
+              <!-- des -->
+              <div>
+                <p>Apple iPhone 14 Pro 512GB Gold (MQ233)</p>
+              </div>
+              <!-- btn -->
+              <button
+                type="button"
+                class="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700"
+              >
+                Buy Now
+              </button>
+              <!-- heart -->
+              <i class="fa-regular fa-heart absolute text-xl top-4 right-4"></i>
+            </div>
+            <!-- empty div -->
+            <div></div>
+            <!-- pagenation -->
+            <div class="col-span-2">
+              <ol
+                class="flex justify-center md:justify-start gap-1 text-xs font-medium"
+              >
+                <li>
+                  <a
+                    href="#"
+                    class="inline-flex size-8 items-center justify-center rounded-sm border border-gray-100 bg-white text-gray-900 rtl:rotate-180"
+                  >
+                    <span class="sr-only">Prev Page</span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="size-3"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="#"
+                    class="block size-8 rounded-sm border border-gray-100 bg-white text-center leading-8 text-gray-900"
+                  >
+                    1
+                  </a>
+                </li>
+
+                <li
+                  class="block size-8 rounded-sm border-blue-600 bg-blue-600 text-center leading-8 text-white"
+                >
+                  2
+                </li>
+
+                <li>
+                  <a
+                    href="#"
+                    class="block size-8 rounded-sm border border-gray-100 bg-white text-center leading-8 text-gray-900"
+                  >
+                    3
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="#"
+                    class="block size-8 rounded-sm border border-gray-100 bg-white text-center leading-8 text-gray-900"
+                  >
+                    4
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="#"
+                    class="inline-flex size-8 items-center justify-center rounded-sm border border-gray-100 bg-white text-gray-900 rtl:rotate-180"
+                  >
+                    <span class="sr-only">Next Page</span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="size-3"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </a>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./style/output.css" />
+    <title>productdetailpage</title>
+  </head>
+  <body>
+    <header class="sticky top-0 z-10">
+      <nav class="bg-white border-gray-200 dark:bg-gray-900">
+        <div
+          class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+        >
+          <a
+            href="https://flowbite.com/"
+            class="flex items-center space-x-3 rtl:space-x-reverse"
+          >
+            <img
+              src="https://flowbite.com/docs/images/logo.svg"
+              class="h-8"
+              alt="Flowbite Logo"
+            />
+            <span
+              class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
+              >Cyber</span
+            >
+          </a>
+          <button
+            data-collapse-toggle="navbar-default"
+            type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-default"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="w-5 h-5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 17 14"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15"
+              />
+            </svg>
+          </button>
+          <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+            <ul
+              class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+            >
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
+                  aria-current="page"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >Pricing</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="">
+      <!-- navigate to sec -->
+      <section
+        class="max-w-[1200px] m-auto bg-white flex flex-wrap gap-3 items-center px-5 pb-10 mt-5"
+      >
+        <div class="flex gap-3 items-center text-gray-300">
+          <p>Home</p>
+          <i class="fa-solid fa-chevron-right"></i>
+        </div>
+        <div class="flex gap-3 items-center text-gray-300">
+          <p>catelog</p>
+          <i class="fa-solid fa-chevron-right"></i>
+        </div>
+        <div class="flex gap-3 items-center text-gray-300">
+          <p>SmartPhones</p>
+          <i class="fa-solid fa-chevron-right"></i>
+        </div>
+        <div class="flex gap-3 items-center text-gray-300">
+          <p>Apple</p>
+          <i class="fa-solid fa-chevron-right"></i>
+        </div>
+        <div class="flex gap-3 items-center">
+          <p>Iphone 16</p>
+        </div>
+      </section>
+      <!-- product section -->
+      <section
+        class="max-w-[1200px] m-auto bg-white grid grid-cols-1 md:grid-cols-2 h-auto"
+      >
+        <!-- left side product -->
+        <div
+          class="flex items-center gap-3 flex-col-reverse md:grid grid-cols-1 md:grid-cols-3 h-auto"
+        >
+          <!-- left prod -->
+          <div class="thumbnails gap-4 flex flex-row md:flex-col col-span-1">
+            <!-- card -->
+            <div id="1" class="cursor-pointer rounded-xl ring-active">
+              <img
+                src="./images/ip16.png"
+                alt="thumbnail"
+                class="rounded-xl object-contain hover:opacity-50 transition active h-[150px]"
+                id="thumb-1"
+              />
+            </div>
+            <!-- card -->
+            <div id="2" class="cursor-pointer rounded-xl ring-active">
+              <img
+                src="./images/ip16.png"
+                alt="thumbnail"
+                class="rounded-xl object-contain hover:opacity-50 transition active h-[150px]"
+                id="thumb-1"
+              />
+            </div>
+            <!-- card -->
+            <div id="3" class="cursor-pointer rounded-xl ring-active">
+              <img
+                src="./images/ip16.png"
+                alt="thumbnail"
+                class="rounded-xl object-contain hover:opacity-50 transition active h-[150px]"
+                id="thumb-1"
+              />
+            </div>
+            <!-- card -->
+            <div id="4" class="cursor-pointer rounded-xl ring-active">
+              <img
+                src="./images/ip16.png"
+                alt="thumbnail"
+                class="rounded-xl object-contain hover:opacity-50 transition active h-[150px]"
+                id="thumb-1"
+              />
+            </div>
+          </div>
+          <!-- main prod -->
+          <div class="col-span-2 px-4 flex justify-center items-center">
+            <img
+              src="./images/ip16.png"
+              alt="sneaker"
+              class="object-contain h-full w-full"
+            />
+          </div>
+        </div>
+        <!-- right side infomation -->
+        <div class="p-5 flex flex-col gap-5">
+          <!--  div of title  & price-->
+          <div class="flex flex-col justify-center gap-2 p-2">
+            <p class="text-4xl font-bold">Apple iPhone 16 Pro Max</p>
+            <p class="text-2xl font-bold">
+              $1399
+              <span class="text-xl font-thin ml-2 line-through"> $1499 </span>
+            </p>
+          </div>
+          <!-- div of Color Selection -->
+          <div class="flex items-center gap-3 p-2">
+            <div class="">
+              <h3 class="font-medium text-gray-900">Selct color</h3>
+            </div>
+            <div class="flex space-x-3">
+              <button
+                class="w-[20px] h-[20px] bg-yellow-500 rounded-full ring-2 ring-offset-2 ring-black"
+              ></button>
+              <button
+                class="w-[20px] h-[20px] bg-gray-300 rounded-full hover:ring-2 hover:ring-offset-2 hover:ring-gray-300"
+              ></button>
+              <button
+                class="w-[20px] h-[20px] bg-blue-500 rounded-full hover:ring-2 hover:ring-offset-2 hover:ring-blue-500"
+              ></button>
+              <button
+                class="w-[20px] h-[20px] bg-red-500 rounded-full hover:ring-2 hover:ring-offset-2 hover:ring-blue-500"
+              ></button>
+              <button
+                class="w-[20px] h-[20px] bg-black rounded-full hover:ring-2 hover:ring-offset-2 hover:ring-blue-500"
+              ></button>
+            </div>
+          </div>
+          <!-- div of btn memories -->
+          <div class="flex flex-wrap items-center gap-3">
+            <button
+              type="button"
+              class="py-2.5 px-5 me-2 mb-2 opacity-50 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
+            >
+              128GB
+            </button>
+            <button
+              type="button"
+              class="py-2.5 px-5 me-2 mb-2 opacity-50 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
+            >
+              256GB
+            </button>
+            <button
+              type="button"
+              class="py-2.5 px-5 me-2 mb-2 opacity-50 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
+            >
+              512GB
+            </button>
+            <button
+              type="button"
+              class="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-black hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
+            >
+              128GB
+            </button>
+          </div>
+          <!-- div of detailsection -->
+          <div class="grid grid-cols-2 md:grid-cols-3 gap-3">
+            <!-- 1 -->
+            <div
+              class="py-2.5 flex items-center gap-3 px-5 me-2 mb-2 opacity-50 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
+            >
+              <i class="fa-brands fa-facebook"></i>
+              <p>Screen size 6.7"</p>
+            </div>
+            <!-- 2 -->
+            <div
+              class="py-2.5 flex items-center gap-3 px-5 me-2 mb-2 opacity-50 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
+            >
+              <i class="fa-brands fa-facebook"></i>
+              <p>CPU Apple A16 Bionic</p>
+            </div>
+            <!-- 3 -->
+            <div
+              class="py-2.5 flex items-center gap-3 px-5 me-2 mb-2 opacity-50 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
+            >
+              <i class="fa-brands fa-facebook"></i>
+              <p>Number of Cores6</p>
+            </div>
+            <!-- 4 -->
+            <div
+              class="py-2.5 flex items-center gap-3 px-5 me-2 mb-2 opacity-50 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
+            >
+              <i class="fa-brands fa-facebook"></i>
+              <p>
+                camera <br />
+                48-12 -12 MP
+              </p>
+            </div>
+            <!-- 5 -->
+            <div
+              class="py-2.5 flex items-center gap-3 px-5 me-2 mb-2 opacity-50 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
+            >
+              <i class="fa-brands fa-facebook"></i>
+              <p>
+                Front-camera <br />
+                12 MP
+              </p>
+            </div>
+            <!-- 6 -->
+            <div
+              class="py-2.5 flex items-center gap-3 px-5 me-2 mb-2 opacity-50 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
+            >
+              <i class="fa-brands fa-facebook"></i>
+              <p>
+                Battery capacity <br />
+                4323 mAh
+              </p>
+            </div>
+          </div>
+          <!-- div of descripton -->
+          <div class="mb-4">
+            <p>
+              Enhanced capabilities thanks toan enlarged display of 6.7
+              inchesand work without rechargingthroughout the day. Incredible
+              photosas in weak, yesand in bright lightusing the new systemwith
+              two cameras more...
+            </p>
+          </div>
+          <!-- div of button -->
+          <div class="grid grid-cols-1 gap-3 md:grid-cols-2">
+            <!-- Border -->
+            <div class="w-full flex items-center">
+              <a
+                class="inline-block w-full rounded-sm border border-current px-8 py-3 text-sm font-medium text-black transition hover:scale-110 hover:shadow-xl focus:ring-3 focus:outline-hidden"
+                href="#"
+              >
+                Add to wishlist
+              </a>
+            </div>
+            <!-- Base -->
+            <div class="w-full flex items-center">
+              <a
+                class="inline-block w-full rounded-sm bg-black px-8 py-3 text-sm font-medium text-white transition hover:scale-110 hover:shadow-xl focus:ring-3 focus:outline-hidden"
+                href="#"
+              >
+                Add to Cart
+              </a>
+            </div>
+          </div>
+          <!-- div of deriverly -->
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+            <!-- car -->
+            <div class="flex items-center gap-3">
+              <span
+                class="p-4 bg-gray-300 opacity-50 rounded-lg flex items-center"
+                ><i class="fa-solid fa-truck"></i>
+              </span>
+              <p>
+                Free Delivery <br />
+                1-2 day
+              </p>
+            </div>
+            <!-- stock -->
+            <div class="flex items-center gap-3">
+              <span
+                class="p-4 bg-gray-300 opacity-50 rounded-lg flex items-center"
+                ><i class="fa-solid fa-truck"></i>
+              </span>
+              <p>
+                In Stock <br />
+                Today
+              </p>
+            </div>
+            <!-- waranty -->
+            <div class="flex items-center gap-3">
+              <span
+                class="p-4 bg-gray-300 opacity-50 rounded-lg flex items-center"
+                ><i class="fa-solid fa-truck"></i>
+              </span>
+              <p>
+                Guaranteed
+                <br />
+                1 year
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- details section -->
+      <section class="bg-[#fafafa] py-5">
+        <!-- container -->
+        <div
+          class="max-w-[1200px] m-auto flex flex-col gap-3 bg-white rounded-lg p-5"
+        >
+          <!-- details -->
+          <div>
+            <p class="font-bold text-2xl mb-5">Details</p>
+            <p>
+              Just as a book is judged by its cover, the first thing you notice
+              when you pick up a modern smartphone is the display. Nothing
+              surprising, because advanced technologies allow you to practically
+              level the display frames and cutouts for the front camera and
+              speaker, leaving no room for bold design solutions. And how good
+              that in such realities Apple everything is fine with displays.
+              Both critics and mass consumers always praise the quality of the
+              picture provided by the products of the Californian brand. And
+              last year's 6.7-inch Retina panels, which had ProMotion, caused
+              real admiration for many.
+            </p>
+          </div>
+          <!-- screen -->
+          <div class="flex flex-col gap-3">
+            <p class="font-bold text-xl mb-5">screen</p>
+            <!-- 1 -->
+            <div>
+              <div class="flex mb-5 items-center justify-between">
+                <p>Screen diagonal</p>
+                <p>6.7"</p>
+              </div>
+              <hr class="opacity-10" />
+            </div>
+            <!-- 2 -->
+            <div>
+              <div class="flex mb-5 items-center justify-between">
+                <p>The screen resolution</p>
+                <p>2796x1290</p>
+              </div>
+              <hr class="opacity-10" />
+            </div>
+            <!-- 3 -->
+            <div>
+              <div class="flex mb-5 items-center justify-between">
+                <p>The screen refresh rate</p>
+                <p>120 Hz</p>
+              </div>
+              <hr class="opacity-10" />
+            </div>
+            <!-- 4 -->
+            <div>
+              <div class="flex mb-5 items-center justify-between">
+                <p>The pixel density</p>
+                <p>460 ppi</p>
+              </div>
+              <hr class="opacity-10" />
+            </div>
+            <!-- 5 -->
+            <div>
+              <div class="flex mb-5 items-center justify-between">
+                <p>Screen type</p>
+                <p>OLED</p>
+              </div>
+              <hr class="opacity-10" />
+            </div>
+            <!-- 6 -->
+            <div>
+              <div class="flex mb-5 items-center justify-between">
+                <p>Additionallyl</p>
+                <div class="flex flex-col space-y-1 text-left">
+                  <p class="flex flex-row-reverse">Dynamic Island</p>
+                  <p class="flex flex-row-reverse">Always-On display</p>
+                  <p class="flex flex-row-reverse">HDR display</p>
+                  <p class="flex flex-row-reverse">True Tone</p>
+                  <p class="flex flex-row-reverse">Wide color (P3)</p>
+                </div>
+              </div>
+              <hr class="opacity-10" />
+            </div>
+          </div>
+          <!-- cpu -->
+          <div class="flex flex-col gap-3">
+            <p class="font-bold text-xl mb-5">screen</p>
+            <!-- 1 -->
+            <div>
+              <div class="flex mb-5 items-center justify-between">
+                <p>CPU</p>
+                <p>A18 Bionic</p>
+              </div>
+              <hr class="opacity-10" />
+            </div>
+            <!-- 2 -->
+            <div>
+              <div class="flex mb-5 items-center justify-between">
+                <p>Number of core</p>
+                <p>10</p>
+              </div>
+              <hr class="opacity-10" />
+            </div>
+          </div>
+          <!-- btn view more -->
+          <div class="flex items-center justify-center">
+            <!-- Border -->
+            <div class="flex items-center">
+              <a
+                class="inline-block w-full rounded-sm border border-current px-8 py-3 text-sm font-medium text-black transition hover:scale-110 hover:shadow-xl focus:ring-3 focus:outline-hidden"
+                href="#"
+              >
+                Add to wishlist
+                <span><i class="fa-solid fa-chevron-down pl-5"></i></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+  </body>
+</html>
