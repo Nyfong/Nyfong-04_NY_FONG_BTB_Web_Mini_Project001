@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./style/output.css" />
+    <title>Step1</title>
+  </head>
+  <body>
+    <header class="sticky top-0 z-20">
+      <nav class="bg-white border-gray-200 dark:bg-gray-900">
+        <div
+          class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+        >
+          <a
+            href="https://flowbite.com/"
+            class="flex items-center space-x-3 rtl:space-x-reverse"
+          >
+            <img
+              src="https://flowbite.com/docs/images/logo.svg"
+              class="h-8"
+              alt="Flowbite Logo"
+            />
+            <span
+              class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
+              >Cyber</span
+            >
+          </a>
+          <button
+            data-collapse-toggle="navbar-default"
+            type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-default"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="w-5 h-5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 17 14"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15"
+              />
+            </svg>
+          </button>
+          <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+            <ul
+              class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+            >
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
+                  aria-current="page"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >Pricing</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="px-5 pb-10 max-w-[1200px] min-w-xs m-auto">
+      <!-- step1 section -->
+      <section class="grid grid-cols-3 py-24">
+        <!-- step1 -->
+        <div class="flex items-center gap-1 md:gap-3 p-2">
+          <!-- icon -->
+          <div
+            class="flex items-center justify-center h-[20px] w-[20px] md:h-8 md:w-8 rounded-full bg-black"
+          >
+            <i
+              class="fa-solid fa-location-dot text-white text-[10px] md:text-lg"
+            ></i>
+          </div>
+          <!-- title -->
+          <div class="flex flex-col justify-center">
+            <p class="text-xs md:text-sm">Step 1</p>
+            <p class="text-xs md:text-2xl">Address</p>
+          </div>
+        </div>
+        <!-- step2 -->
+        <div
+          class="flex items-center justify-center gap-1 md:gap-3 p-2 opacity-50"
+        >
+          <!-- icon -->
+          <div
+            class="flex items-center justify-center h-[20px] w-[20px] md:h-8 md:w-8 rounded-full bg-black"
+          >
+            <i
+              class="fa-solid fa-cart-shopping text-white text-[10px] md:text-sm"
+            ></i>
+          </div>
+          <!-- title -->
+          <div class="flex flex-col justify-center">
+            <p class="text-xs md:text-sm">Step 2</p>
+            <p class="text-xs md:text-2xl">shipping</p>
+          </div>
+        </div>
+        <!-- step3 -->
+        <div
+          class="flex items-center justify-end gap-1 md:gap-3 p-2 opacity-50"
+        >
+          <!-- icon -->
+          <div
+            class="flex items-center justify-center h-[20px] w-[20px] md:h-8 md:w-8 rounded-full bg-black"
+          >
+            <i
+              class="fa-solid fa-truck-fast text-white text-[10px] md:text-lg"
+            ></i>
+          </div>
+          <!-- title -->
+          <div class="flex flex-col justify-center">
+            <p class="text-xs md:text-sm">Step 3</p>
+            <p class="text-xs md:text-2xl">Payment</p>
+          </div>
+        </div>
+      </section>
+      <!-- Select Address section -->
+      <section class="grid grid-cols-1">
+        <p class="text-2xl font-bold">Select Address</p>
+        <!-- address1 -->
+        <div
+          class="grid grid-cols-12 bg-[#eee] h-[150px] p-3 rounded-lg mt-5 gap-3"
+        >
+          <div class="col-span-1 py-5 md:py-6 flex justify-center">
+            <button
+              class="w-[10px] h-[10px] md:w-[20px] md:h-[20px] bg-black rounded-full ring-2 ring-offset-2 ring-black"
+            ></button>
+          </div>
+          <div
+            class="col-span-10 flex flex-col text-xs md:text-md w-full gap-2 p-2"
+          >
+            <div class="flex items-center gap-4">
+              <p>2118 Thornridge</p>
+              <span
+                class="py-1 px-3 md:px-5 md:p-2 rounded-lg text-white bg-black"
+                >HOME</span
+              >
+            </div>
+            <div>
+              <p>2118 Thornridge Cir. Syracuse, Connecticut 35624</p>
+            </div>
+            <div>
+              <p>(209) 555-0104</p>
+            </div>
+          </div>
+          <div class="col-span-1 gap-2 flex items-center justify-end">
+            <div class="flex items-center gap-5 md:pr-10 justify-end">
+              <i class="fa-solid fa-pen"></i>
+              <i class="fa-solid fa-xmark text-gray-400 md:text-2xl"></i>
+            </div>
+          </div>
+        </div>
+        <!-- address2 -->
+        <div
+          class="grid grid-cols-12 bg-[#eee] h-[150px] p-3 rounded-lg mt-5 gap-3"
+        >
+          <div class="col-span-1 py-5 md:py-6 flex justify-center">
+            <button
+              class="w-[10px] h-[10px] md:w-[20px] md:h-[20px] rounded-full ring-2 ring-black"
+            ></button>
+          </div>
+          <div
+            class="col-span-10 text-xs md:text-md flex flex-col w-full gap-2 p-2"
+          >
+            <div class="flex items-center gap-4">
+              <p>Headoffice</p>
+              <span
+                class="py-1 px-3 md:px-5 md:p-2 rounded-lg text-white bg-black"
+                >Office</span
+              >
+            </div>
+            <div>
+              <p>22715 Ash Dr. San Jose, South Dakota 83475</p>
+            </div>
+            <div>
+              <p>(704) 555-0127</p>
+            </div>
+          </div>
+          <div class="col-span-1 gap-2 flex items-center justify-end">
+            <div class="flex items-center gap-5 md:pr-10 justify-end">
+              <i class="fa-solid fa-pen"></i>
+              <i class="fa-solid fa-xmark text-gray-400 md:text-2xl"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="flex gap-5 items-center justify-end mt-10">
+        <!-- Base -->
+        <div class="flex items-center">
+          <a
+            class="inline-block w-full rounded-sm border border-current px-8 md:px-20 py-3 text-sm font-medium text-black transition hover:scale-110 hover:shadow-xl focus:ring-3 focus:outline-hidden"
+            href="./shoppingcart.html"
+          >
+            Back
+          </a>
+        </div>
+        <!-- Base -->
+        <div class="flex items-center">
+          <a
+            class="inline-block w-full text-white bg-black rounded-sm border border-current px-8 md:px-20 py-3 text-sm font-medium text-black transition hover:scale-110 hover:shadow-xl focus:ring-3 focus:outline-hidden"
+            href="#"
+          >
+            Next
+          </a>
+        </div>
+      </section>
+    </main>
+    <footer class="hidden p-5 bg-black">
+      <section class="max-w-[1200px] m-auto grid grid-cols-1">
+        <div class="grid grid-cols-1 md:grid-cols-3">
+          <!-- 1 -->
+          <div class="flex flex-col gap-5 p-4">
+            <span class="font-semibold text-white">Cyber</span>
+            <p class="text-gray-400">
+              We are a residential interior design firm located in Portland. Our
+              boutique-studio offers more than
+            </p>
+          </div>
+          <!-- 2 -->
+          <div class="flex flex-col gap-5 p-4">
+            <span class="font-semibold text-white">Services</span>
+            <ul class="text-gray-400">
+              <li class="mb-5">
+                <a href=""> Bonus program </a>
+              </li>
+              <li class="mb-5">
+                <a href=""> Gift cards </a>
+              </li>
+              <li class="mb-5">
+                <a href=""> Credit and payment </a>
+              </li>
+              <li class="mb-5">
+                <a href=""> Service contracts </a>
+              </li>
+              <li class="mb-5">
+                <a href=""> Non-cash account </a>
+              </li>
+              <li class="mb-5">
+                <a href=""> Payment </a>
+              </li>
+            </ul>
+          </div>
+          <!-- 3 -->
+          <div class="flex flex-col gap-5 p-4">
+            <span class="font-semibold text-white">Services</span>
+            <ul class="text-gray-400">
+              <li class="mb-5">
+                <a href=""> Bonus program </a>
+              </li>
+              <li class="mb-5">
+                <a href=""> Gift cards </a>
+              </li>
+              <li class="mb-5">
+                <a href=""> Credit and payment </a>
+              </li>
+              <li class="mb-5">
+                <a href=""> Service contracts </a>
+              </li>
+              <li class="mb-5">
+                <a href=""> Non-cash account </a>
+              </li>
+              <li class="mb-5">
+                <a href=""> Payment </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="text-white pl-4 md:pl-0 h-[150px]">
+          <div class="flex items-center gap-5 h-full">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-github"></i>
+            <i class="fa-brands fa-tiktok"></i>
+            <i class="fa-brands fa-twitter"></i>
+          </div>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>

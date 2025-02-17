@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./style/output.css" />
+    <title>Shopping Cart</title>
+  </head>
+  <body>
+    <header class="sticky top-0 z-20">
+      <nav class="bg-white border-gray-200 dark:bg-gray-900">
+        <div
+          class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+        >
+          <a
+            href="https://flowbite.com/"
+            class="flex items-center space-x-3 rtl:space-x-reverse"
+          >
+            <img
+              src="https://flowbite.com/docs/images/logo.svg"
+              class="h-8"
+              alt="Flowbite Logo"
+            />
+            <span
+              class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
+              >Cyber</span
+            >
+          </a>
+          <button
+            data-collapse-toggle="navbar-default"
+            type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-default"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="w-5 h-5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 17 14"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15"
+              />
+            </svg>
+          </button>
+          <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+            <ul
+              class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+            >
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
+                  aria-current="page"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >Pricing</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="px-5 pb-10 max-w-[1200px] min-w-xs m-auto">
+      <!-- section shoping cart -->
+      <section
+        class="relative z-10 after:contents-[''] after:absolute after:z-0 after:h-full xl:after:w-1/3 after:top-0 after:right-0"
+      >
+        <div class="w-full lg-6 mx-auto relative z-10">
+          <div class="grid grid-cols-12">
+            <!-- right hand -->
+            <div
+              class="col-span-12 xl:col-span-7 pt-14 pb-8 lg:py-24 w-full max-xl:max-w-3xl max-xl:mx-auto"
+            >
+              <div class="flex items-center justify-between pb-8 b">
+                <h2
+                  class="font-manrope font-bold text-3xl leading-10 text-black"
+                >
+                  Shopping Cart
+                </h2>
+              </div>
+              <!-- product1 -->
+              <div
+                class="flex flex-col justify-center items-center md:flex-row gap-5 py-6 border-b border-gray-200 group"
+              >
+                <!-- img -->
+                <div class="w-full md:max-w-[126px]">
+                  <img
+                    src="./images/ip16.png"
+                    alt="perfume bottle image"
+                    class="mx-auto h-32 rounded-xl object-cover"
+                  />
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-4 w-full">
+                  <div class="md:col-span-2">
+                    <!-- title -->
+                    <div
+                      class="flex flex-col items-center md:items-start justify-center gap-3"
+                    >
+                      <h6 class="font-semibold text-base leading-7 text-black">
+                        Apple iPhone 14 Pro Max 128Gb Deep Purple
+                      </h6>
+                      <h6 class="font-normal text-base leading-7 text-gray-500">
+                        #25139526913984
+                      </h6>
+                    </div>
+                  </div>
+                  <div
+                    class="flex flex-col items-center justify-center md:flex-row h-full max-md:mt-3"
+                  >
+                    <div class="flex items-center justify-center h-full">
+                      <button
+                        class="group rounded-l-xl px-5 py-[18px] flex items-center justify-center shadow-sm shadow-transparent transition-all duration-500 hover:bg-gray-50 hover:border-gray-300 hover:shadow-gray-300 focus-within:outline-gray-300"
+                      >
+                        <svg
+                          class="stroke-gray-900 transition-all duration-500 group-hover:stroke-black"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="22"
+                          height="22"
+                          viewBox="0 0 22 22"
+                          fill="none"
+                        >
+                          <path
+                            d="M16.5 11H5.5"
+                            stroke=""
+                            stroke-width="1.6"
+                            stroke-linecap="round"
+                          />
+                          <path
+                            d="M16.5 11H5.5"
+                            stroke=""
+                            stroke-opacity="0.2"
+                            stroke-width="1.6"
+                            stroke-linecap="round"
+                          />
+                          <path
+                            d="M16.5 11H5.5"
+                            stroke=""
+                            stroke-opacity="0.2"
+                            stroke-width="1.6"
+                            stroke-linecap="round"
+                          />
+                        </svg>
+                      </button>
+                      <input
+                        type="text"
+                        class="border-y border-gray-200 outline-none text-gray-900 font-semibold text-lg w-full max-w-[73px] min-w-[60px] placeholder:text-gray-900 py-[15px] text-center bg-transparent"
+                        placeholder="1"
+                      />
+                      <button
+                        class="group rounded-r-xl px-5 py-[18px] flex items-center justify-center shadow-sm shadow-transparent transition-all duration-500 hover:bg-gray-50 hover:border-gray-300 hover:shadow-gray-300 focus-within:outline-gray-300"
+                      >
+                        <svg
+                          class="stroke-gray-900 transition-all duration-500 group-hover:stroke-black"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="22"
+                          height="22"
+                          viewBox="0 0 22 22"
+                          fill="none"
+                        >
+                          <path
+                            d="M11 5.5V16.5M16.5 11H5.5"
+                            stroke=""
+                            stroke-width="1.6"
+                            stroke-linecap="round"
+                          />
+                          <path
+                            d="M11 5.5V16.5M16.5 11H5.5"
+                            stroke=""
+                            stroke-opacity="0.2"
+                            stroke-width="1.6"
+                            stroke-linecap="round"
+                          />
+                          <path
+                            d="M11 5.5V16.5M16.5 11H5.5"
+                            stroke=""
+                            stroke-opacity="0.2"
+                            stroke-width="1.6"
+                            stroke-linecap="round"
+                          />
+                        </svg>
+                      </button>
+                      <!-- cancle -->
+                      <div
+                        class="flex items-center justify-center flex-row md:justify-end max-md:mt-3 h-full"
+                      >
+                        <p
+                          class="font-bold text-lg leading-8 text-gray-600 text-center transition-all duration-300 group-hover:text-indigo-600"
+                        >
+                          $1399
+                        </p>
+                        <p class="pl-5"><i class="fa-solid fa-xmark"></i></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- product1 -->
+              <div
+                class="flex flex-col justify-center items-center md:flex-row gap-5 py-6 border-b border-gray-200 group"
+              >
+                <!-- img -->
+                <div class="w-full md:max-w-[126px]">
+                  <img
+                    src="https://www.govconnection.com/media/j4lezkjc/2848781-products-apple-macbook-pro.png?b=192484"
+                    alt="perfume bottle image"
+                    class="mx-auto h-32 rounded-xl object-contain"
+                  />
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-4 w-full">
+                  <div class="md:col-span-2">
+                    <!-- title -->
+                    <div
+                      class="flex flex-col items-center md:items-start justify-center gap-3"
+                    >
+                      <h6 class="font-semibold text-base leading-7 text-black">
+                        Apple MacBook Pro 14" M4 Pro chip
+                      </h6>
+                      <h6 class="font-normal text-base leading-7 text-gray-500">
+                        #41853653
+                      </h6>
+                    </div>
+                  </div>
+                  <div
+                    class="flex flex-col items-center justify-center md:flex-row h-full max-md:mt-3"
+                  >
+                    <div class="flex items-center justify-center h-full">
+                      <button
+                        class="group rounded-l-xl px-5 py-[18px] flex items-center justify-center shadow-sm shadow-transparent transition-all duration-500 hover:bg-gray-50 hover:border-gray-300 hover:shadow-gray-300 focus-within:outline-gray-300"
+                      >
+                        <svg
+                          class="stroke-gray-900 transition-all duration-500 group-hover:stroke-black"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="22"
+                          height="22"
+                          viewBox="0 0 22 22"
+                          fill="none"
+                        >
+                          <path
+                            d="M16.5 11H5.5"
+                            stroke=""
+                            stroke-width="1.6"
+                            stroke-linecap="round"
+                          />
+                          <path
+                            d="M16.5 11H5.5"
+                            stroke=""
+                            stroke-opacity="0.2"
+                            stroke-width="1.6"
+                            stroke-linecap="round"
+                          />
+                          <path
+                            d="M16.5 11H5.5"
+                            stroke=""
+                            stroke-opacity="0.2"
+                            stroke-width="1.6"
+                            stroke-linecap="round"
+                          />
+                        </svg>
+                      </button>
+                      <input
+                        type="text"
+                        class="border-y border-gray-200 outline-none text-gray-900 font-semibold text-lg w-full max-w-[73px] min-w-[60px] placeholder:text-gray-900 py-[15px] text-center bg-transparent"
+                        placeholder="1"
+                      />
+                      <button
+                        class="group rounded-r-xl px-5 py-[18px] flex items-center justify-center shadow-sm shadow-transparent transition-all duration-500 hover:bg-gray-50 hover:border-gray-300 hover:shadow-gray-300 focus-within:outline-gray-300"
+                      >
+                        <svg
+                          class="stroke-gray-900 transition-all duration-500 group-hover:stroke-black"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="22"
+                          height="22"
+                          viewBox="0 0 22 22"
+                          fill="none"
+                        >
+                          <path
+                            d="M11 5.5V16.5M16.5 11H5.5"
+                            stroke=""
+                            stroke-width="1.6"
+                            stroke-linecap="round"
+                          />
+                          <path
+                            d="M11 5.5V16.5M16.5 11H5.5"
+                            stroke=""
+                            stroke-opacity="0.2"
+                            stroke-width="1.6"
+                            stroke-linecap="round"
+                          />
+                          <path
+                            d="M11 5.5V16.5M16.5 11H5.5"
+                            stroke=""
+                            stroke-opacity="0.2"
+                            stroke-width="1.6"
+                            stroke-linecap="round"
+                          />
+                        </svg>
+                      </button>
+                      <!-- cancle -->
+                      <div
+                        class="flex items-center justify-center flex-row md:justify-end max-md:mt-3 h-full"
+                      >
+                        <p
+                          class="font-bold text-lg leading-8 text-gray-600 text-center transition-all duration-300 group-hover:text-indigo-600"
+                        >
+                          $1399
+                        </p>
+                        <p class="pl-5"><i class="fa-solid fa-xmark"></i></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- left hand -->
+            <div
+              class="col-span-12 xl:col-span-5 w-full max-w-3xl xl:max-w-lg mx-auto pl-3 py-24"
+            >
+              <!-- container -->
+              <div class="p-3 border-1 border-gray-100 rounded-lg">
+                <h2
+                  class="font-manrope font-bold text-3xl leading-10 text-black pb-8 border-b border-gray-300"
+                >
+                  Order Summary
+                </h2>
+                <div class="mt-8">
+                  <form>
+                    <label
+                      class="flex items-center mb-1.5 text-gray-600 text-sm font-medium"
+                      >Discount code / Promo code
+                    </label>
+                    <div class="flex pb-6">
+                      <div class="relative w-full">
+                        <div class="absolute left-0 top-0 py-3 px-4">
+                          <span class="font-normal text-base text-gray-300"
+                            >Code</span
+                          >
+                        </div>
+                        <input
+                          type="text"
+                          class="block w-full pr-10 pl-36 min-[500px]:pl-52 py-4 text-base font-normal shadow-xs text-gray-900 bg-white border border-gray-300 rounded-lg placeholder-gray-400 focus:outline-gray-400"
+                        />
+
+                        <div
+                          id="dropdown-delivery"
+                          aria-labelledby="dropdown-delivery"
+                          class="z-20 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 absolute top-10 bg-white right-0"
+                        >
+                          <ul
+                            class="py-2 text-sm text-gray-700 dark:text-gray-200"
+                            aria-labelledby="dropdown-button"
+                          >
+                            <li>
+                              <a
+                                href="#"
+                                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                                >Shopping</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                href="#"
+                                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                                >Images</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                href="#"
+                                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                                >News</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                href="#"
+                                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                                >Finance</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <label
+                      class="flex items-center mb-1.5 text-gray-400 text-sm font-medium"
+                      >Promo Code
+                    </label>
+                    <div class="flex pb-6">
+                      <div class="relative w-full">
+                        <div class="absolute left-0 top-0 py-3 px-4">
+                          <span class="font-normal text-base text-gray-300"
+                            >Code</span
+                          >
+                        </div>
+                        <input
+                          type="text"
+                          class="block w-full pr-10 pl-36 min-[500px]:pl-52 py-4 text-base font-normal shadow-xs text-gray-900 bg-white border border-gray-300 rounded-lg placeholder-gray-400 focus:outline-gray-400"
+                        />
+                        <div
+                          class="dropdown-toggle flex-shrink-0 z-10 inline-flex items-center text-base font-medium text-center text-gray-900 bg-transparent absolute right-0 top-2 pl-2"
+                        >
+                          <button
+                            type="button"
+                            class="text-black border-1 hover:text-white hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2 me-2 mb-2 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700"
+                          >
+                            Apply
+                          </button>
+                        </div>
+                        <div
+                          id="dropdown-delivery"
+                          aria-labelledby="dropdown-delivery"
+                          class="z-20 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 absolute top-10 bg-white right-0"
+                        >
+                          <ul
+                            class="py-2 text-sm text-gray-700 dark:text-gray-200"
+                            aria-labelledby="dropdown-button"
+                          >
+                            <li>
+                              <a
+                                href="#"
+                                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                                >Shopping</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                href="#"
+                                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                                >Images</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                href="#"
+                                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                                >News</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                href="#"
+                                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                                >Finance</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- sumary total -->
+                    <div class="flex items-center flex-col">
+                      <!-- 1 -->
+                      <div class="flex items-center justify-between p-2 w-full">
+                        <p class="font-medium text-xl leading-8 text-black">
+                          Subtotal
+                        </p>
+                        <p
+                          class="font-semibold text-xl leading-8 text-indigo-600"
+                        >
+                          $2347
+                        </p>
+                      </div>
+                      <!-- 2 -->
+                      <div
+                        class="flex items-center justify-between p-2 w-full text-lg"
+                      >
+                        <p class="font-medium opacity-50 leading-8 text-black">
+                          Estimated Tax
+                        </p>
+                        <p class="font-semibold leading-8 text-black">$45.00</p>
+                      </div>
+                      <!-- 3 -->
+                      <div
+                        class="flex items-center justify-between p-2 w-full text-lg"
+                      >
+                        <p class="font-medium opacity-50 leading-8 text-black">
+                          Estimated shipping & Handling
+                        </p>
+                        <p class="font-semibold leading-8 text-black">$28.00</p>
+                      </div>
+                      <!-- 4 -->
+                      <div
+                        class="flex items-center justify-between p-2 w-full text-lg"
+                      >
+                        <p class="font-medium leading-8 text-black">Total</p>
+                        <p class="font-semibold leading-8 text-black">$28.00</p>
+                      </div>
+                    </div>
+                    <a
+                      class="inline-block w-full text-white text-center bg-black rounded-md border border-current px-8 md:px-20 py-3 text-sm font-medium text-black transition hover:scale-110 hover:shadow-xl focus:ring-3 focus:outline-hidden"
+                      href="./step1.html"
+                    >
+                      Checkout
+                    </a>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="p-5 bg-black">
+      <section class="max-w-[1200px] m-auto grid grid-cols-1">
+        <div class="grid grid-cols-1 md:grid-cols-3">
+          <!-- 1 -->
+          <div class="flex flex-col gap-5 p-4">
+            <span class="font-semibold text-white">Cyber</span>
+            <p class="text-gray-400">
+              We are a residential interior design firm located in Portland. Our
+              boutique-studio offers more than
+            </p>
+          </div>
+          <!-- 2 -->
+          <div class="flex flex-col gap-5 p-4">
+            <span class="font-semibold text-white">Services</span>
+            <ul class="text-gray-400">
+              <li class="mb-5">
+                <a href=""> Bonus program </a>
+              </li>
+              <li class="mb-5">
+                <a href=""> Gift cards </a>
+              </li>
+              <li class="mb-5">
+                <a href=""> Credit and payment </a>
+              </li>
+              <li class="mb-5">
+                <a href=""> Service contracts </a>
+              </li>
+              <li class="mb-5">
+                <a href=""> Non-cash account </a>
+              </li>
+              <li class="mb-5">
+                <a href=""> Payment </a>
+              </li>
+            </ul>
+          </div>
+          <!-- 3 -->
+          <div class="flex flex-col gap-5 p-4">
+            <span class="font-semibold text-white">Services</span>
+            <ul class="text-gray-400">
+              <li class="mb-5">
+                <a href=""> Bonus program </a>
+              </li>
+              <li class="mb-5">
+                <a href=""> Gift cards </a>
+              </li>
+              <li class="mb-5">
+                <a href=""> Credit and payment </a>
+              </li>
+              <li class="mb-5">
+                <a href=""> Service contracts </a>
+              </li>
+              <li class="mb-5">
+                <a href=""> Non-cash account </a>
+              </li>
+              <li class="mb-5">
+                <a href=""> Payment </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="text-white pl-4 md:pl-0 h-[150px]">
+          <div class="flex items-center gap-5 h-full">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-github"></i>
+            <i class="fa-brands fa-tiktok"></i>
+            <i class="fa-brands fa-twitter"></i>
+          </div>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>
