@@ -16,7 +16,7 @@
     />
 
     <link rel="stylesheet" href="./style/output.css" />
-    <title>Step1</title>
+    <title>Step3</title>
   </head>
   <body>
     <header class="sticky top-0 z-20">
@@ -28,16 +28,49 @@
             href="https://flowbite.com/"
             class="flex items-center space-x-3 rtl:space-x-reverse"
           >
-            <img
-              src="https://flowbite.com/docs/images/logo.svg"
-              class="h-8"
-              alt="Flowbite Logo"
-            />
             <span
               class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
               >cyber</span
             >
           </a>
+          <!-- search -->
+          <div>
+            <form class="hidden lg:block lg:w-[500px] mx-auto">
+              <label
+                for="default-search"
+                class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white"
+                >Search</label
+              >
+              <div class="relative">
+                <div
+                  class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none"
+                >
+                  <svg
+                    class="w-4 h-4 text-gray-500 dark:text-gray-400"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
+                    />
+                  </svg>
+                </div>
+                <input
+                  type="search"
+                  id="default-search"
+                  class="block w-full p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                  placeholder="Search "
+                  required
+                />
+              </div>
+            </form>
+          </div>
           <button
             data-collapse-toggle="navbar-default"
             type="button"
@@ -68,8 +101,8 @@
             >
               <li>
                 <a
-                  href="#"
-                  class="block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
+                  href="./index.html"
+                  class="block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-black md:p-0 dark:text-white"
                   aria-current="page"
                   >Home</a
                 >
@@ -85,24 +118,23 @@
                 <a
                   href="#"
                   class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-                  >Services</a
+                  >Contact Us</a
                 >
               </li>
               <li>
                 <a
                   href="#"
                   class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-                  >Pricing</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-                  >Contact</a
+                  >Blog</a
                 >
               </li>
             </ul>
+          </div>
+          <!-- for icons -->
+          <div class="hidden md:flex items-center justify-center gap-5 p-2">
+            <i class="fa-regular fa-heart"></i>
+            <img src="./images/shopping.png" alt="shop" />
+            <i class="fa-regular fa-user"></i>
           </div>
         </div>
       </nav>
@@ -111,7 +143,7 @@
       <!-- step1 section -->
       <section class="grid grid-cols-3 py-24">
         <!-- step1 -->
-        <div class="flex items-center gap-1 md:gap-3 p-2">
+        <div class="flex items-center gap-1 md:gap-3 p-2 opacity-50">
           <!-- icon -->
           <div
             class="flex items-center justify-center h-[20px] w-[20px] md:h-8 md:w-8 rounded-full bg-black"
@@ -145,9 +177,7 @@
           </div>
         </div>
         <!-- step3 -->
-        <div
-          class="flex items-center justify-end gap-1 md:gap-3 p-2 opacity-50"
-        >
+        <div class="flex items-center justify-end gap-1 md:gap-3 p-2">
           <!-- icon -->
           <div
             class="flex items-center justify-center h-[20px] w-[20px] md:h-8 md:w-8 rounded-full bg-black"
@@ -165,94 +195,118 @@
       </section>
       <!-- Select Address section -->
       <section class="grid grid-cols-1">
-        <p class="text-2xl font-bold">Select Address</p>
-        <!-- address1 -->
-        <div
-          class="grid grid-cols-12 bg-[#eee] h-[150px] p-3 rounded-lg mt-5 gap-3"
-        >
-          <div class="col-span-1 py-5 md:py-6 flex justify-center">
-            <button
-              class="w-[10px] h-[10px] md:w-[20px] md:h-[20px] bg-black rounded-full ring-2 ring-offset-2 ring-black"
-            ></button>
-          </div>
+        <!-- 2 of div -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+          <!-- 1 product -->
           <div
-            class="col-span-10 flex flex-col text-xs md:text-md w-full gap-2 p-2"
+            class="flex flex-col gap-3 border-1 border-gray-200 rounded-lg p-5"
           >
-            <div class="flex items-center gap-4">
-              <p>2118 Thornridge</p>
-              <span
-                class="py-1 px-3 md:px-5 md:p-2 rounded-lg text-white bg-black"
-                >HOME</span
+            <p class="text-2xl font-thin">Summary</p>
+            <!-- pord1 -->
+            <div
+              class="grid grid-cols-12 border-1 border-[#eee] py-5 px-3 rounded-lg mt-5 gap-3"
+            >
+              <div class="col-span-2 flex flex-col items-center justify-center">
+                <img
+                  src="./images/ip16.png"
+                  class="block h-10 w-full object-contain"
+                  alt=""
+                />
+              </div>
+              <div
+                class="col-span-8 flex flex-col justify-center text-xs md:text-lg w-full gap-2 p-2"
               >
+                <div class="flex items-center gap-4">
+                  <p class="text-md">
+                    Apple iPhone 14 Pro Max 128Gb Deep Purple
+                  </p>
+                </div>
+              </div>
+              <div class="col-span-2 gap-2 flex items-center justify-end">
+                <p class="text-md">$1399</p>
+              </div>
             </div>
-            <div>
-              <p>2118 Thornridge Cir. Syracuse, Connecticut 35624</p>
-            </div>
-            <div>
-              <p>(209) 555-0104</p>
-            </div>
-          </div>
-          <div class="col-span-1 gap-2 flex items-center justify-end">
-            <div class="flex items-center gap-5 md:pr-10 justify-end">
-              <i class="fa-solid fa-pen"></i>
-              <i class="fa-solid fa-xmark text-gray-400 md:text-2xl"></i>
-            </div>
-          </div>
-        </div>
-        <!-- address2 -->
-        <div
-          class="grid grid-cols-12 bg-[#eee] h-[150px] p-3 rounded-lg mt-5 gap-3"
-        >
-          <div class="col-span-1 py-5 md:py-6 flex justify-center">
-            <button
-              class="w-[10px] h-[10px] md:w-[20px] md:h-[20px] rounded-full ring-2 ring-black"
-            ></button>
-          </div>
-          <div
-            class="col-span-10 text-xs md:text-md flex flex-col w-full gap-2 p-2"
-          >
-            <div class="flex items-center gap-4">
-              <p>Headoffice</p>
-              <span
-                class="py-1 px-3 md:px-5 md:p-2 rounded-lg text-white bg-black"
-                >Office</span
+            <!-- pord2 -->
+            <div
+              class="grid grid-cols-12 border-1 border-[#eee] py-5 px-3 rounded-lg mt-5 gap-3"
+            >
+              <div class="col-span-2 flex flex-col items-center justify-center">
+                <img
+                  src="./images/mac.png"
+                  class="block h-10 w-full object-contain"
+                  alt=""
+                />
+              </div>
+              <div
+                class="col-span-8 flex flex-col justify-center text-xs md:text-lg w-full gap-2 p-2"
               >
+                <div class="flex items-center gap-4">
+                  <p class="text-md">Apple MacBook Pro 14" M4 Pro chip</p>
+                </div>
+              </div>
+              <div class="col-span-2 gap-2 flex items-center justify-end">
+                <p class="text-md">$1399</p>
+              </div>
             </div>
-            <div>
-              <p>22715 Ash Dr. San Jose, South Dakota 83475</p>
-            </div>
-            <div>
-              <p>(704) 555-0127</p>
+            <!-- adress and details -->
+
+            <div class="flex flex-col gap-3 justify-center">
+              <p class="text-sm font-thin">Address</p>
+              <p class="text-md">1131 Dusty Townline, Jacksonville, TX 40322</p>
+              <p class="text-sm font-thin">Shipment method</p>
+              <p class="text-md">Free</p>
+              <!-- subtotal -->
+              <div class="flex flex items-center justify-between gap-2 py-2">
+                <p class="text-md">Sub total</p>
+                <p class="text-md">$2347</p>
+              </div>
+              <!-- tax -->
+              <div class="flex flex items-center justify-between gap-2 py-2">
+                <p class="text-md opacity-50">Estimated Tax</p>
+                <p class="text-md">$50</p>
+              </div>
+              <!-- shipping -->
+              <div class="flex flex items-center justify-between gap-2 py-2">
+                <p class="text-md opacity-50">Estimated shipping & Handling</p>
+                <p class="text-md">$29</p>
+              </div>
+              <!-- subtotal -->
+              <div
+                class="flex flex items-center justify-between gap-2 py-2 font-bold"
+              >
+                <p class="text-md">Total</p>
+                <p class="text-md">$2426</p>
+              </div>
             </div>
           </div>
-          <div class="col-span-1 gap-2 flex items-center justify-end">
-            <div class="flex items-center gap-5 md:pr-10 justify-end">
-              <i class="fa-solid fa-pen"></i>
-              <i class="fa-solid fa-xmark text-gray-400 md:text-2xl"></i>
+          <!-- 2 visacard -->
+          <div>
+            <!-- button -->
+            <div class="flex gap-5 items-center justify-end mt-10">
+              <!-- Base -->
+              <div class="flex items-center">
+                <a
+                  class="inline-block w-full rounded-sm border border-current px-8 md:px-20 py-3 text-sm font-medium text-black transition hover:scale-110 hover:shadow-xl focus:ring-3 focus:outline-hidden"
+                  href="./step2.html"
+                >
+                  Back
+                </a>
+              </div>
+              <!-- Base -->
+              <div class="flex items-center">
+                <a
+                  class="inline-block w-full text-white bg-black rounded-sm border border-current px-8 md:px-20 py-3 text-sm font-medium text-black transition hover:scale-110 hover:shadow-xl focus:ring-3 focus:outline-hidden"
+                  href="#"
+                >
+                  Next
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </section>
-      <section class="flex gap-5 items-center justify-end mt-10">
-        <!-- Base -->
-        <div class="flex items-center">
-          <a
-            class="inline-block w-full rounded-sm border border-current px-8 md:px-20 py-3 text-sm font-medium text-black transition hover:scale-110 hover:shadow-xl focus:ring-3 focus:outline-hidden"
-            href="./shoppingcart.html"
-          >
-            Back
-          </a>
-        </div>
-        <!-- Base -->
-        <div class="flex items-center">
-          <a
-            class="inline-block w-full text-white bg-black rounded-sm border border-current px-8 md:px-20 py-3 text-sm font-medium text-black transition hover:scale-110 hover:shadow-xl focus:ring-3 focus:outline-hidden"
-            href="./step2.html"
-          >
-            Next
-          </a>
-        </div>
-      </section>
+      <!-- test -->
+      <section></section>
     </main>
     <footer class="hidden p-5 bg-black">
       <section class="max-w-[1200px] m-auto grid grid-cols-1">
